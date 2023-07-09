@@ -2,15 +2,15 @@ import React from "react";
 import "./styles.css";
 
 import Navbar from "./components/Navbar/Navbar"
+import TaskList from "./components/TaskList/TaskList";
 
 export default function App() {
   return (
     <div className="App">
       <Navbar />
-      <ul className="lista">
-        <li>Aprendendo React</li>
-        <li>Componentes</li>
-      </ul>
+      <div>
+        <TaskList />       
+      </div>
     </div>
   );
 }
