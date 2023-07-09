@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar/Navbar";
 export default function App() {
   return (
     <div className="App">
-      <h1>Ola Mundo</h1>
+      <Navbar />
       <ul className="lista">
         <li>Aprendendo React</li>
         <li>Componentes</li>
