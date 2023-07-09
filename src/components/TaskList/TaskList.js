@@ -1,9 +1,11 @@
 import React from "react";
+import "./tasklist.css"
 
-export default function TaskList(props) {
+export default function TaskList({ title }) {
     return(
-        <div>
-            <div>{props.title}</div>
+        <div className="tasklist">
+            <div className="title">{title}</div>
+            <div className="content"></div>
         </div>
     )
 }
