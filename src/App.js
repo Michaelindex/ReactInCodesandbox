@@ -14,13 +14,12 @@ let idAcc = 0;
 const generateId = () => {
   idAcc = idAcc + 1;
   return idAcc;
-}
+};
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
 
   const addTask = (title, state) => {
-    console.log("Funcao sendo chamada em App")
     const newTask = {
       id: generateId(),
       title,
@@ -28,8 +27,8 @@ export default function App() {
     };
     setTasks((existingTasks) => {
       return[...existingTasks, newTask]
-    })
-  }
+    });
+  };
 
   return (
     <div className="App">
